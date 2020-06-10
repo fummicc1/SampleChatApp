@@ -25,6 +25,4 @@ class ChatListActivity : AppCompatActivity() {
             adapter = viewAdapter
         }
     }
-
-
 }

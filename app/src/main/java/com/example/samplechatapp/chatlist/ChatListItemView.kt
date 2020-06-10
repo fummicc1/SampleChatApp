@@ -12,6 +12,8 @@ import com.example.samplechatapp.model.Chat
 class ChatListItemView : LinearLayout {
 
     private lateinit var chatNameTextView: TextView
+    var chat: Chat? = null
+        private set
 
     constructor(context: Context) : super(context) {
         init(null, 0)
@@ -35,6 +37,7 @@ class ChatListItemView : LinearLayout {
     }
 
     fun configure(chat: Chat) {
+        this.chat = chat
         chatNameTextView.text = chat.name
     }
 }
