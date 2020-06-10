@@ -2,7 +2,7 @@ package com.example.samplechatapp.model
 
 import java.util.*
 
-class Mock {
+object Mock {
 
     fun createUser(userID: String, name: String): User {
         return  User(uid = userID, createdAt = Date(), signedInAt = Date(), name = name)

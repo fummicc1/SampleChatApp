@@ -18,7 +18,7 @@ class ChatListActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_chat_list)
         viewManager = LinearLayoutManager(this)
-        viewAdapter = ChatListAdapter(Mock().createChats(30))
+        viewAdapter = ChatListAdapter(Mock.createChats(30))
         recyclerView = findViewById<RecyclerView>(R.id.recyclerView).apply {
             setHasFixedSize(true)
             layoutManager = viewManager
