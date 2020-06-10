@@ -2,5 +2,5 @@ package com.example.samplechatapp.model
 
 import java.util.*
 
-data class Chat(val messages: Array<ChatMessage>, val users: Array<User>, val createdAt: Date, val updatedAt: Date)
+data class Chat(val messages: List<ChatMessage>, val users: List<User>, val createdAt: Date = Date(), val updatedAt: Date = Date())
 
