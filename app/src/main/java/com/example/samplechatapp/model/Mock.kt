@@ -13,6 +13,7 @@ class Mock {
             val sourceUser: User = createUser(index)
             val destinationUser: User = createUser(index * 100)
            Chat(
+               name = "Chat$index",
                messages = (0..10).map { createMessage(sourceUser, destinationUser) },
                users = listOf(sourceUser, destinationUser)
            )
