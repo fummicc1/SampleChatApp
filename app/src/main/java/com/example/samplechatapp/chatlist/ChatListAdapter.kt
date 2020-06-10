@@ -4,10 +4,10 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.samplechatapp.model.Chat
 
-class ChatListAdapter(private val chats: Array<Chat>): RecyclerView.Adapter<ChatViewHolder>() {
+class ChatListAdapter(private val chats: List<Chat>): RecyclerView.Adapter<ChatViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ChatViewHolder {
-        val view = ChatListItemView()
-        ChatViewHolder()
+        val view = ChatListItemView(parent.context)
+        return ChatViewHolder(view)
     }
 
     override fun getItemCount(): Int {

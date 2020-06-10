@@ -9,9 +9,6 @@ import android.widget.TextView
 import com.example.samplechatapp.R
 import com.example.samplechatapp.model.Chat
 
-/**
- * TODO: document your custom view class.
- */
 class ChatListItemView : LinearLayout {
 
     private lateinit var chatNameTextView: TextView
